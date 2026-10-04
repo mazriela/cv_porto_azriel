@@ -109,7 +109,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     location: "Perumahan Villa Indah Permai Blok H32/16, Bekasi Utara, Indonesia",
     linkedin: "https://www.linkedin.com/in/muhamad-azriel-akbar",
     github: "https://github.com/azrielakbar",
-    profileImage: "/assets/profile-azriel.png",
+    profileImage: "/assets/pp_azriel.png",
     cvUrl: "/Muhamad_Azriel_Akbar_CV.pdf",
     stats: [
       { label: "Years Experience", value: "5+", icon: "Briefcase" },

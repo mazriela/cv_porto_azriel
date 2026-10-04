@@ -5,13 +5,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { sound } from "@/utils/sound";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import { 
-  Terminal, 
-  Sparkles, 
-  Smartphone, 
-  BookOpen, 
-  Trophy, 
-  Briefcase, 
+import {
+  Terminal,
+  Sparkles,
+  Smartphone,
+  BookOpen,
+  Trophy,
+  Briefcase,
   GraduationCap,
   ArrowRight,
   Download,
@@ -60,7 +60,7 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
       className="relative min-h-screen pt-28 pb-20 px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center overflow-hidden"
     >
       {/* Cinematic Depth Ambient Glow */}
-      <div 
+      <div
         className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42rem] h-[26rem] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/15 to-purple-600/10 blur-[130px] rounded-full pointer-events-none"
         style={{
           transform: `translate(calc(-50% + ${tilt.x * 2}px), calc(-50% + ${tilt.y * 2}px))`
@@ -68,7 +68,7 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
       />
 
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
-        
+
         {/* Left Column: Cinematic Typography & Narrative (7 cols) */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -76,7 +76,7 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-7 flex flex-col items-start text-left space-y-6"
         >
-          
+
           {/* Status Capsule */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-cyan-500/30 text-[11px] sm:text-xs font-mono text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.15)] animate-fade-in">
             <span className="relative flex h-2 w-2">
@@ -123,11 +123,10 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
                       setTerminalTab(tab);
                     }}
                     onMouseEnter={() => sound.playHover()}
-                    className={`px-2.5 py-0.5 rounded text-[11px] uppercase transition-colors ${
-                      terminalTab === tab
-                        ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40"
-                        : "text-slate-400 hover:text-white"
-                    }`}
+                    className={`px-2.5 py-0.5 rounded text-[11px] uppercase transition-colors ${terminalTab === tab
+                      ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40"
+                      : "text-slate-400 hover:text-white"
+                      }`}
                   >
                     {tab}
                   </button>
@@ -262,7 +261,7 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
                   priority
                   className="object-cover object-top filter brightness-105 contrast-105 group-hover:scale-105 transition-transform duration-500"
                 />
-                
+
                 {/* Overlay Vignette */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
 
@@ -282,7 +281,7 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
             </div>
 
             {/* Floating Multi-Layer Depth Badge 1: Top Right */}
-            <div 
+            <div
               className="absolute -top-3 -right-2 sm:-top-6 sm:-right-6 glass-panel px-2.5 py-1.5 sm:px-3.5 sm:py-2.5 rounded-2xl border border-cyan-400/40 shadow-xl backdrop-blur-xl flex items-center gap-2 sm:gap-2.5 animate-bounce [animation-duration:4s]"
               style={{ transform: "translateZ(40px)" }}
             >
@@ -296,7 +295,7 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
             </div>
 
             {/* Floating Multi-Layer Depth Badge 2: Bottom Left */}
-            <div 
+            <div
               className="absolute -bottom-3 -left-2 sm:-bottom-6 sm:-left-6 glass-panel px-2.5 py-1.5 sm:px-3.5 sm:py-2.5 rounded-2xl border border-indigo-400/40 shadow-xl backdrop-blur-xl flex items-center gap-2 sm:gap-2.5 animate-bounce [animation-duration:5s]"
               style={{ transform: "translateZ(50px)" }}
             >
@@ -310,12 +309,12 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
             </div>
 
             {/* Floating Multi-Layer Depth Badge 3: Center Right */}
-            <div 
+            <div
               className="absolute top-1/2 -right-8 -translate-y-1/2 glass-panel px-3 py-2 rounded-xl border border-purple-400/40 shadow-xl backdrop-blur-xl flex items-center gap-2 hidden sm:flex"
               style={{ transform: "translateZ(30px)" }}
             >
               <span className="w-2 h-2 rounded-full bg-purple-400 animate-ping" />
-              <span className="text-[11px] font-mono text-purple-200">DJI Drone Specialist</span>
+              <span className="text-[11px] font-mono text-purple-200"></span>
             </div>
 
           </div>
@@ -335,9 +334,8 @@ export default function HeroSection({ onOpenCvModal }: HeroSectionProps) {
               transition={{ duration: 0.5, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -6, scale: 1.02 }}
               onMouseEnter={() => sound.playHover()}
-              className={`glass-card p-4 rounded-2xl flex flex-col items-center text-center group cursor-pointer ${
-                idx === 4 ? "col-span-2 md:col-span-1" : ""
-              }`}
+              className={`glass-card p-4 rounded-2xl flex flex-col items-center text-center group cursor-pointer ${idx === 4 ? "col-span-2 md:col-span-1" : ""
+                }`}
             >
               <span className="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-300 group-hover:scale-110 transition-transform">
                 {stat.value}
